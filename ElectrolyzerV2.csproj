@@ -31,40 +31,68 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DebugSymbols>true</DebugSymbols>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\libs\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\libs\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\libs\Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\..\..\libs\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\libs\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\libs\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>..\..\..\libs\UnityEngine.ImageConversionModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\libs\UnityEngine.UI.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="ElectrlyzerV2Config.cs" />
     <Compile Include="ElectrolyzerV2.cs" />
     <Compile Include="ElectrolyzerV2Patchs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\0Harmony.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Assembly-CSharp-firstpass.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Assembly-CSharp.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\System.Core.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\System.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Unity.TextMeshPro.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.CoreModule.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.ImageConversionModule.dll" />
+    <Analyzer Include="..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.UI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PLib, Version=3.13.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PLib.3.13.1\lib\net40\PLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\Downloads\OxygenNotIncluded\Mod files\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

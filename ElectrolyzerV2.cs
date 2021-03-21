@@ -1,7 +1,7 @@
 ﻿using System;
 using KSerialization;
 using UnityEngine;
-using ElectrolyzerV2;
+
 
 
 namespace ElectrolyzerV2
@@ -9,11 +9,10 @@ namespace ElectrolyzerV2
 {
 
 
-
-
 	[SerializationConfig(KSerialization.MemberSerialization.OptIn)]
 	public class ElectrolyzerV2 : StateMachineComponent<ElectrolyzerV2.StatesInstance>
 	{
+
 		protected override void OnSpawn()
 		{
 			KBatchedAnimController component = base.GetComponent<KBatchedAnimController>();
